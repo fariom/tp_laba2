@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.h	working-tree-encoding=cp1251	eol=crlf
+*.cpp	working-tree-encoding=cp1251	eol=crlf
