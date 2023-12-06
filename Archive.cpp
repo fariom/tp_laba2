@@ -36,7 +36,7 @@ Archive::~Archive() {
 void Archive::sortByAverageGrade() {
 	Student* t;
 	for (int i = 0; i < size - 1;i++) {
-		for (int j = i;j < size - 1;j++) {
+		for (int j = 0;j < size - 1 - i;j++) {
 			if ((*list[j]) < (*list[j + 1])) {
 				t = list[j];
 				list[j] = list[j + 1];

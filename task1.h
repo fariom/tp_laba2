@@ -95,7 +95,7 @@ bool getWordFromFile(char* word, char* sentence, int* size, ifstream& fin) {
 		word[wc++] = c;
 	};
 	if (endOfSentence(c)) {
-		word[0] = '\0';
+		word[wc] = '\0';
 		sentence[(*size)++] = c;
 		return FALSE;
 	}

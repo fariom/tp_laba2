@@ -75,7 +75,7 @@ float Student::getAverageGrade() {
 
 
 bool Student::operator < (Student& r) {
-	return this->getAverageGrade() > r.getAverageGrade() ? 0 : 1;
+	return this->getAverageGrade() < r.getAverageGrade();
 }; // сравнение средних оценок
 
 Student& Student::operator = (Student& r) {

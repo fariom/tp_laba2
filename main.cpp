@@ -1,5 +1,6 @@
 #include "task1.h"
 #include "Archive.h"
+#include "Header.h"
 
 void main() {
 	SetConsoleCP(1251);
@@ -67,7 +68,12 @@ void main() {
 					break;
 				}
 				case 5: {
-					students->showWith4and5();
+					if (students->getSize() == 0) {
+						cout << "Список студентов пуст" << endl;
+					}
+					else {
+						students->showWith4and5();
+					}
 					break;
 				}
 				case 6: {
